@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Hello there!!</title>
+    </head>
+    <body>
+        <!--Table 1-->
+        <h1>GeeksForGeeks</h1>
+        <h3>HTML th rowspan Attribute</h3>
+        <table border="1" width = 25%>
+            <tr>
+                <th>NAME</th>
+                <th rowspan="3">AGE</th>
+                <th>BRANCH</th>
+            </tr>
+            <tr>
+                <th>BITTU</th>
+                <th>CSE</th>
+            </tr>
+            <tr>
+                <th>RAKESH</th>
+                <th>EC</th>
+            </tr>
+        </table>
+        <br/>
+        <hr/>
+        <br/>
+        <!--Table 2-->
+        <table border="1" width = 25%>
+        <tr>
+           <th colspan = "3">Product</th>
+        </tr>
+        <tr>
+            <th>No</th>
+            <th>P.Name</th>
+            <th>P.Count</th>
+        </tr>
+        <tr>
+            <th>1</th>
+            <th>Pen</th>
+            <th rowspan = "3">50</th>
+        </tr>
+        <tr>
+            <th>2</th>
+            <th>Book</th>
+        </tr>
+        <tr>
+            <th>3</th>
+            <th>Dust</th>
+        </tr>
+        </table>
+        <br/>
+        <hr/>
+        <br/>
+        <!--Table 3-->
+        <table border="1" width = 25%>
+            <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+                <th>Column 3</th>
+            </tr>
+            <tr>
+                <th colspan ="2">Row 1 Columns 1-2</th>
+                <th>Row1 Columns 3</th>
+            </tr>
+            <tr>
+                <th colspan="3">Row 2 Columns 1-3</th>
+            </tr>
+        </table>
+        <br/>
+        <hr/>
+        <br/>
+        <!--Table 4-->
+        <table border="1" width = 25%>
+            <tr>
+               <th colspan = "4">Table using rowspan and colspan</td>
+            </tr>
+            <tr>
+                <th colspan = "4">Khanewal Self Store</th>
+            </tr>
+            <tr>
+                <th>Item/Desc</th>
+                <th>QTY</th>
+                <th>Price/Unit</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <th>Sugger</th>
+                <th>5 kg</th>
+                <th>50</th>
+                <th>250</th>
+            </tr>
+            <tr>
+                <th>Cooking Oil</th>
+                <th>2 kg</th>
+                <th>200</th>
+                <th>400</th>
+            </tr>
+            <tr>
+                <th>Soap</th>
+                <th>4 Pieces</th>
+                <th>40</th>
+                <th>160</th>
+            </tr>
+            <tr>
+                <th colspan="3">Subtotal</th>
+                <th>810</th>
+            </tr>
+            <tr>
+                <th colspan="2">Tax</th>
+                <th>5%</th>
+                <th>41</th>
+            </tr>
+            <tr>
+                <th colspan="3">Total Bill</th>
+                <th>851</th>
+            </tr>
+            </table>
+            <br/>
+            <hr/>
+            <br/>
+            
+    </body>
+    </html>
