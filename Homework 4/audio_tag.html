@@ -1,1 +1,30 @@
-
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Audio Tag</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Using the "audio" tag</h1><br>
+        <dl>
+            <dt><h3>Hello in french:</h3></dt>
+            <dd>
+                <audio controls loop preload="auto">           
+                    <source src="./Hello.mp3" type="audio/mp3">
+                    <source src="./Hello.ogg" type="audio/ogg">
+                    Your browser doesn't support audio tag
+                </audio>
+            </dd>
+            <dt><h3>Goodbye in french:</h3></dt>
+            <dd>
+                <audio controls muted autoplay loop>           
+                    <source src="./Good Bye.mp3" type="audio/mp3">
+                    <source src="./Good Bye.ogg" type="audio/ogg">
+                    Your browser doesn't support audio tag
+                </audio>
+            </dd>
+        </dl>
+        
+    </body>
+</html>
