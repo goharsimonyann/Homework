@@ -1,0 +1,44 @@
+body{
+    text-align: center;
+    background-color:  rgba(153,204,204, 0.2);
+}
+h1,h5{
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+    line-height: 10px;
+}
+h1{
+    text-transform: uppercase;
+}
+h5{
+    text-decoration: underline;
+    font-style: italic;
+}
+form{
+    border: 5px groove;
+    border-color: lightblue;
+    border-radius: 5px;
+}
+#div1, .div2{
+    font-size: 20px;
+}
+
+
+section{
+    color:red;
+}
+section div{
+    color:yellow;
+}
+div span{
+    color:blue;
+}
+section div span{
+    color:aquamarine;
+}
+.span_class{
+    color:yellowgreen;
+}
+#span_id{
+    color:blueviolet;
+}
