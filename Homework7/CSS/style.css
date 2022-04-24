@@ -1,0 +1,51 @@
+.text-center{
+    text-align: center;
+}
+.text-justify{
+    text-align: justify;
+}
+.text-left{
+    text-align: left;
+}
+body{
+    text-align: center;
+}
+.bold{
+    font-weight: bold;
+}
+.italic{
+    font-style: italic;
+}
+.border{
+    border-bottom: 25px solid purple; 
+}
+h1{
+    font-size: 52px;
+    font-weight: bolder;
+    font-variant: small-caps;
+}
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.background_color{
+    background-color: #bfe0bf;
+}
+ol{
+    list-style-type: none;
+}
+body {
+    counter-reset: list;
+  }
+a {
+    counter-reset: sublist;
+  }
+    a::before {
+    counter-increment: list;
+    content: counter(list) ". ";
+  }
+  li::before {
+    counter-increment: sublist;
+    content: counter(list) "." counter(sublist) " ";
+  }
+ 
