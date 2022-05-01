@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.paddings{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header{
+    width:100%;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: rgb(249, 247, 247);}
+
+.second_section, 
+.third_section{
+    display: table;
+}
+
+.container{
+    margin: 0 auto;
+    height:100px;
+    max-width: 1400px;
+}
+
+.nav{
+    width:calc(100% - 10px);
+    display:inline-block;
+    text-align: right;
+    margin-top: 6px;
+    position: relative;
+    top: -92px;
+}
+
+.nav ul{
+    list-style-type: none;
+    font-size: 22px;
+    display:inline-block;
+}
+
+.nav ul li{
+    display: inline;
+    margin-right: 10px;
+}
+
+.nav ul a{
+    text-decoration: none;
+    color:black;
+}
+
+.nav ul a:hover{
+    color:rgb(210, 32, 220);
+}
+
+.first_section_div{
+    height:500px;
+    max-height: 500px;
+    background-image: url("https://www.xmple.com/wallpaper/graph-paper-white-blue-grid-2880x1800-c2-ffffff-add8e6-l2-3-90-a-0-f-20.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.first_section_div h1{
+    padding-top: 70px;
+    font-size: 72px;
+}
+
+.first_section_div p{
+    padding: 30px 70px 0 30px;
+    font-size: 28px;
+}
+
+.div1, 
+.div2{
+    display: table;
+}
+
+.second_section{
+    margin-bottom: 50px;
+}
+
+.second_section_text{
+    display: inline-block;
+    width:50%;
+    max-height: 300px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.second_section_text h1{
+    font-size: 48px;
+}
+
+.second_section_image{
+    background-image: url("https://picsart.academy/img/svg/illustrations-03.webp");
+    width:50%;
+    height: 400px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.third_section{
+    margin-bottom: 50px;
+}
+
+.third_section_image{
+    background-image: url("https://picsart.academy/img/svg/illustrations-02.webp");
+    width:50%;
+    height: 400px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.third_section_text{
+    display: inline-block;
+    width:50%;
+    max-height: 300px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.third_section_text h1{
+    font-size: 48px;
+}
+
+footer{
+    background-color: rgb(249, 247, 247);
+    height: 120px;
+}
+
+footer .contact{
+    display: inline-block;
+    padding: 20px 55px;
+    line-height: 10px;
+}
+
+.contact h4{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+footer .icon{
+    padding: 20px 55px;
+    vertical-align: middle;
+    position: relative;
+    top:-70px;
+}
