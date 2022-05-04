@@ -1,1 +1,143 @@
 
+*{
+    box-sizing: border-box;
+}
+section, 
+div{
+    margin-bottom: 50px;
+}
+
+section *:nth-child(2n+1){
+    color:orangered;
+}
+
+/* alternative for 2n+1:
+
+ section *:nth-child(odd){
+ color:orangered;
+} */
+
+
+section p:nth-last-child(n+8){
+    color:orangered;
+}
+
+section *:nth-child(10){
+    color:blue;
+}
+
+div *:nth-of-type(even){
+    color:rgb(34, 206, 69);
+}
+
+div *:nth-of-type(odd){
+    color:orange;
+}
+
+h2{
+    text-shadow: 5px 3px 5px orangered;
+    opacity: 60%;
+}
+
+h3{
+    text-shadow: 8px 5px 10px blueviolet, 15px 8px 10px orangered;
+}
+
+.div1{
+    height:100px;
+    width:300px;
+    /* background-color: aqua; */
+    visibility: none;
+}
+
+.div2{
+    height: 100px;
+    width: 300px;
+    /* background-color: aqua; */
+    display: none;
+}
+
+.box1{
+    width:200px;
+    height: 200px;
+    opacity: 70%;
+    background-color: orangered;
+    margin-top: 50px;
+    border:1px solid orangered;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px blue, 20px 15px 20px green;
+}
+
+.box2{
+    width:200px;
+    height: 200px;
+    background-color: yellowgreen;
+    margin-top:  50px;
+    border:1px solid yellowgreen;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px orange, 20px 15px 20px purple;
+}
+
+.box2 h3{
+    text-align: center;
+    padding: 70px 0;
+    font-weight: bold;
+    color:black;
+    text-shadow: 5px 2px 1px #fff, 10px 4px 10px red;
+}
+
+.parent{
+    width:500px;
+    height:500px;
+    margin-left: 70px;
+    background-color: red;
+}
+
+.child1{
+    height:inherit;
+    width: 300px;
+    margin:inherit;
+    background-color: bisque;
+}
+
+.child2{
+    width:inherit;
+    height: 200px;
+    background-color: green;
+    border: 5px solid blue;
+}
+
+.child3{
+    width: 100px;
+    height: 100px;
+    background-color: aliceblue;
+    border:inherit;
+    margin: 50px 90px;
+}
+
+.smth{
+    margin:unset;
+    display: unset;
+}
+
+div > p{
+    font-size: 22px;
+}
+
+div + h2{
+    font-size: 32px;
+}
+
+p::after{
+    content: " - ::after Selector";
+}
+
+span::before{
+    content: "- ::before Selector";
+}
+
+p:last-of-type{
+   background-color: aqua;
+}
+
+
