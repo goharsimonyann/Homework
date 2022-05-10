@@ -1,0 +1,251 @@
+*{
+    margin:0;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+.parent{
+    margin: 20px 10px 20px;
+    width: max(50%,600px);
+    height:430px;
+    position: relative;
+    background-color: bisque;
+}
+
+.box{
+    height:80px;
+    width:120px;
+    position: absolute;
+    text-align: center;
+    line-height: 80px;
+}
+
+.control1{
+    top: 20px;
+    left: 40px;
+    background-color: azure;
+
+}
+
+.control2{
+    top: 70px;
+    left: 100px;
+    background-color:aqua;
+}
+
+.control3{
+    top: 120px;
+    left: 160px;
+    background-color:blue;
+}
+
+.control4{
+    top: 170px;
+    left: 220px;
+    background-color:yellowgreen;
+}
+
+.control5{
+    top: 220px;
+    left: 280px;
+    background-color:yellow;
+}
+
+.control6{
+    top: 270px;
+    left: 340px;
+    background-color:violet;
+    z-index: 1;
+}
+
+.control7{
+    top: 320px;
+    left: 400px;
+    background-color:tomato;
+}
+
+.text{
+    margin: 20px 10px 20px;
+    width:100%;
+}
+
+div > p{
+    font-variant: small-caps;
+    background-color:beige;
+    width:min(50%, 600px);
+    line-height: 24px;
+    text-indent: 20px;
+}
+
+p::first-letter{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+p::first-line{
+    color:brown;
+    font-size: 18px;
+}
+
+p::selection{
+    background-color: brown;
+    color:aliceblue;
+}
+
+.list{
+    margin: 20px 10px 20px;
+}
+
+.list ul{
+    list-style-type: square;
+}
+
+.list ul li::marker{
+    color:brown;
+    font-size: 32px;
+}
+
+.list ul li::before{
+    content: "smthsmthsmth ";
+    color: #fff;
+    background-color:yellowgreen;
+}
+.list ul li::after{
+    content: " smthsmthsmth";
+    font-weight: bold;
+    color:yellowgreen;
+}
+
+.clamp{
+    margin: 20px 10px 20px;
+    Width:clamp(300px, 50%, 500px);
+    height:200px;
+    background-color: pink;
+}
+
+@media screen and (max-width: 500px){
+
+    .clamp{
+        background-color: violet;
+        border-radius: 10px;
+    }
+}
+
+.box1{
+    width: 100px;
+    height:100px;
+    margin:20px 10px 20px;
+    text-align: center;
+    line-height: 100px;
+    background-color: aquamarine;
+    transition: width 1s;
+    transition-delay: .5s;
+}
+
+.box1:hover{
+    width: 500px;
+    cursor: pointer;
+}
+
+.box2{
+    width: 100px;
+    height:100px;
+    margin:20px 10px 20px;
+    text-align: center;
+    line-height: 100px;
+    background-color: green;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    transition: height 3s, transform 2s;
+}
+
+.box2:hover{
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+
+.box3{
+    width: 150px;
+    height:150px;
+    margin:20px 10px 20px;
+    text-align: center;
+    line-height: 150px;
+    background-color: blueviolet;
+    transition: 2s;
+}
+
+.box3:hover{
+    width:100%;
+    height:250px;
+    line-height: 250px;
+    border-radius: 10px;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+
+.box4{
+    width: 100px;
+    height:100px;
+    line-height: 100px;
+    text-align: center;
+    margin: 20px 10px 20px;
+    background-color: bisque;
+    transform: translate(50%, 20%);
+}
+
+.container{
+    width: 600px;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.div1{
+    width: 300px;
+    height:100px;
+    margin-bottom: 20px;
+    position: absolute;
+}
+
+.div2{
+    display: inline-block;
+    width:calc(100% - 300px);
+    left:300px;
+    margin-bottom: 20px;
+    position: absolute;
+    height: 100px;
+}
+
+@media screen and (min-width: 600px){
+
+    .container .div1{
+        background-color: blue;
+    }
+
+    .container .div2{
+        background-color: aqua;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+
+    .container .div1{
+        background-color: aqua;
+        border: 2px solid black; 
+    }
+
+    .container .div2{
+        background-color: blue;
+        border: 2px solid black;  
+ }
+        
+}
+
+
+
+
+
+
