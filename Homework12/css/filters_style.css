@@ -1,0 +1,79 @@
+body{
+    margin:0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+    margin-top: 30px;
+}
+
+ul li{
+    display: inline-block;
+    margin: 50px;
+}
+
+.photo_1{
+    width:400px;
+    height:300px;
+    filter: blur(1px) brightness(50%) contrast(120%) drop-shadow(10px 10px 20px red);
+}
+
+.photo_2{
+    width:400px;
+    height: 300px;
+    border-radius: 10px;
+
+    filter: drop-shadow(10px 10px 10px blue) hue-rotate(270deg) opacity(70%) saturate(200%); 
+}
+
+.photo_3{
+    width:400px;
+    height: 300px;
+    filter: blur(2px) contrast(200%) grayscale(100%);
+}
+
+.photo_4{
+    width:400px;
+    height:300px;
+    filter: brightness(50%) sepia(100%);
+}
+
+.photo_5{
+    width:400px;
+    height:300px;
+    filter: invert(100%) saturate(150%);
+}
+
+.photo_6{
+    width:500px;
+    height:300px;
+    filter: blur(1px) brightness(120%) contrast(70%) drop-shadow(5px 5px 5px gray) grayscale(90%) saturate(800%) ;
+}
+
+.box{
+    width: 500px;
+    height: 500px;
+    background-image: radial-gradient(red, orangered, rgb(255, 200, 0), yellow);
+    border-radius: 50%;
+    position: relative;
+    left:0px;
+    animation: movement 2s infinite;
+}
+
+@keyframes movement {
+    0% {top:0px; left:0px;}
+    10% {left: 100px}
+    20% {left: 200px}
+    30% {left: 300px}
+    40% {left: 400px}
+    50% {left: 500px}
+    60% {left: 600px}
+    70% {left: 700px}
+    80% {left: 800px}
+    90% {left: 900px}
+    100% {left:1000px}
+}
