@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.container{
+    display: inline-block;
+}
+
+.text1{
+    width: 350px;
+    height: 150px;
+    margin: 10px;
+    display: inline-block;
+    border: 1px solid black;
+
+    overflow: hidden;
+    word-break: break-all;
+}
+
+.text2{
+    width: 350px;
+    height: 150px;
+    display: inline-block;
+    margin: 10px;
+    border: 1px solid black;
+
+    overflow: hidden;
+    word-break: keep-all;
+}
+
+.text3{
+    width: 350px;
+    height: 150px;
+    display: inline-block;
+    margin: 10px;
+    border: 1px solid black;
+
+    overflow-x: scroll;
+    word-break: break-word;
+    writing-mode: vertical-rl;
+}
+
+.text3 span{
+    font-weight: bold;
+    writing-mode:horizontal-tb;
+}
+
+.text4{
+    width: 350px;
+    height: 150px;
+    display: inline-block;
+    margin: 10px;
+    border: 1px solid black;
+
+    overflow-y: scroll;
+    word-break: keep-all;
+}
+
+.text4 span{
+    font-weight: bold;
+    writing-mode: vertical-lr;
+}
+
+.text5{
+    width: 700px;
+    border: 1px solid black;
+    margin:16px;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.text6{
+    width: 700px;
+    border: 1px solid black;
+    margin:16px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: clip;  
+}
+
+.text7{
+    width:300px;
+    border: 1px solid black;
+    margin:16px;
+    transition: 1s;
+    font-size: 18px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.text7:hover{
+    width: fit-content;
+    overflow: visible;
+    border: white;
+    background-color:beige;
+    font-size: 24px;
+    font-weight: 600;
+}
