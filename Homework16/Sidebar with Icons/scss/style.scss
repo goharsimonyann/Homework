@@ -1,18 +1,6 @@
-$smallcaps: small-caps;
-$gray: rgb(98, 98, 98);
-$white: #fff;
-$font-weight: 600;
-
-@mixin flex(){
-    display: flex;
-    flex-direction: column;
-}
-
-@mixin fixed-position(){
-    position: fixed;
-    top:0;
-    left:0;
-}
+@import '_variables';
+@import '_mixins';
+@import '_main';
 
 *{
     box-sizing:border-box;
@@ -29,22 +17,21 @@ html{
 }
 
 .container{
- 
+
     .sidebar{
         @include flex;
         @include fixed-position;
+        
         height:100%;
         width:250px;
-        background-color: rgb(29, 34, 34);
+
+        background-color: $sidebar-bgcolor;
 
         padding-top: 20px;
         padding-left: 30px;
         
         a{
-            text-decoration: none;
-            font-size: 24px;
-            font-variant: $smallcaps;
-            font-weight: $font-weight;
+            @include font-design;
             color: $gray;
 
                 i{
@@ -58,21 +45,9 @@ html{
                     i{
                         color:$white;
                     }
-                }
-                        
+                }                    
             }
         }
-    }
+}
 
-    .main{
-        margin-left: 300px;
 
-        h2{
-            font-size: 32px;
-            font-variant: $smallcaps;
-        }
-
-        p{
-            font-variant: $smallcaps;
-        }
-    }

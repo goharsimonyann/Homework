@@ -1,0 +1,14 @@
+@import '_variables';
+
+.main{
+    margin-left: 300px;
+
+    h2{
+        font-size: 32px;
+        font-variant: $smallcaps;
+    }
+
+    p{
+        font-variant: $smallcaps;
+    }
+}

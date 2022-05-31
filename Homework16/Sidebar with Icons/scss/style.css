@@ -1,3 +1,16 @@
+.main {
+  margin-left: 300px;
+}
+
+.main h2 {
+  font-size: 32px;
+  font-variant: small-caps;
+}
+
+.main p {
+  font-variant: small-caps;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -35,7 +48,7 @@ html {
   text-decoration: none;
   font-size: 24px;
   font-variant: small-caps;
-  font-weight: 600;
+  font-weight: bold;
   color: #626262;
 }
 
@@ -51,18 +64,5 @@ html {
 
 .container .sidebar a:hover i {
   color: #fff;
-}
-
-.main {
-  margin-left: 300px;
-}
-
-.main h2 {
-  font-size: 32px;
-  font-variant: small-caps;
-}
-
-.main p {
-  font-variant: small-caps;
 }
 /*# sourceMappingURL=style.css.map */
