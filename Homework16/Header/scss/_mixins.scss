@@ -1,0 +1,16 @@
+@mixin flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin font {
+    font-size: 18px;
+    font-weight: bold;
+    font-variant: small-caps;
+
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Libre Bodoni', serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
+}

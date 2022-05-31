@@ -1,0 +1,21 @@
+@import '_variables';
+@import '_mixins';
+
+button{
+    width:100px;
+    height:40px;
+    padding:3px;
+
+    background-color: $button-bgcolor;
+    border-radius: $radius;
+    outline: none;
+    border:none;
+    @include font();
+    color:$font-color;
+
+    &:hover{
+        cursor: pointer;
+        background-color:$button-hover-bgcolor;
+        color:black;
+    }
+}
