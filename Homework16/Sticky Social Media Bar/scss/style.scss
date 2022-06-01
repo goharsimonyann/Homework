@@ -1,27 +1,6 @@
-$facebook-blue: #3B5998;
-$twitter-blue: #55ACEE;
-$google-red: #dd4b39;
-$linkedin-blue: #007bb5;
-$youtube-red:#bb0000;
-
-*{
-    box-sizing: border-box;
-}
-
-body{
-    margin:0;
-}
-
-@mixin flex-column(){
-    display: flex;
-    flex-direction: column;
-}
-
-@mixin position(){
-    position: fixed;
-    top:50%;
-    transform: translateY(-50%);
-}
+@import '_variables';
+@import '_sizing';
+@import '_mixins';
 
 .icons{
     @include position;
