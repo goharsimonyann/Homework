@@ -1,0 +1,13 @@
+li{
+    margin-right: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    
+    .link{
+        &:link,
+        &:visited{
+            color:$color-black;
+            text-decoration: none;
+        }
+    }
+}

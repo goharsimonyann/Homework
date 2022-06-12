@@ -1,0 +1,47 @@
+.btn{
+    color:$color-black;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-decoration: none;
+    margin-right:1.5rem;
+
+    &--blue{
+        background-color: $color-blue;
+        color:$color-white;
+        height:3.5rem;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+}
+
+.subscription-box{
+    display: flex;
+    margin-bottom: 2rem;
+
+    &--input{
+        padding:.75rem;
+        border: 3px solid $color-blue;
+        border-radius: 5px 0px 0px 5px;                
+    }
+
+    &--btn{
+        padding:1rem;
+        color:$color-white;
+        background: $color-blue;
+        border-radius: 0px 5px 5px 0px;
+        border:none;
+    }
+}
+
+.trial-box{
+    display: flex;
+    font-size: 1.2rem;
+
+    ul{
+        display: flex;
+        margin-left: 2rem;
+        li{
+            margin-right: 2rem;
+        }
+    }
+}

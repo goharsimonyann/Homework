@@ -1,0 +1,29 @@
+@mixin flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexColumn{
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flexStart {
+    display: flex;
+    align-items:center;
+    justify-content: flex-start;
+}
+
+@mixin flexEnd{
+    display: flex;
+    align-items:center;
+    justify-content: flex-end;
+}
+
+@mixin flexTop-Box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:center;
+}
