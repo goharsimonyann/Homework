@@ -1,0 +1,25 @@
+.btn{
+    padding: 1rem 4rem;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.button-primary{
+    background-color: $color-primary-green;
+    border: .3rem solid $color-primary-green;
+    color: $color-primary-green; 
+}
+
+.button-secondary{
+    border: .3rem solid $color-primary-green;
+    margin-right:4rem;
+    color: $color-primary-green-dark;
+
+    &--white{
+        color:$color-white;
+        border: .3rem solid $color-white;
+        margin-right:4rem;
+    }
+}

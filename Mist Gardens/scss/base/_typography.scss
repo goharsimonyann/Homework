@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.heading-primary{
+    &--main{
+        margin-bottom: 4rem;
+        color: $color-primary-green-dark;
+        font-size: 4.6rem;
+        font-family: 'Libre Baskerville';
+        text-transform: capitalize;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        line-height: 110%;
+    }
+
+    &--sub{
+        margin-bottom: 4rem;
+        font-size: 2rem;
+        font-weight: 300;
+        text-transform: capitalize;
+        font-family: "Roboto";
+    }
+}
+
+.heading-secondary{
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    &--main{
+        margin-bottom: 3rem;
+        font-size: 3rem;
+        word-wrap: break-word;
+        font-family: Libre Baskerville;
+        font-weight: 400;
+        color:$color-white;
+    }
+
+    &--sub{
+        margin-bottom: 3rem;
+        font-size: 1.2rem;
+        font-weight: 300;
+        color:$color-white;
+        text-transform: capitalize;
+        font-family: "Roboto";
+        line-height: 150%;
+    }
+
+    &--title{
+        margin-bottom: 1rem;
+        font-family: "Libre Baskerville";
+        font-size: 4rem;
+        color: $color-primary-green-dark;
+        font-weight: 400;
+    }
+}
