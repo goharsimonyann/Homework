@@ -8,7 +8,7 @@
     }
 
     &__top-box{
-      @include flexTop-Box;
+      @include flexForSections;
         margin-bottom: 5rem;
     }
 
@@ -39,7 +39,8 @@
     &__container{
         padding: 5rem 31rem;
         max-width: 150rem;
-        display: flex;
+        @include flexForSections;
+        
     }
 
     &--list-bar{
@@ -63,10 +64,10 @@
     }
 
     &--right{
-        padding: 4rem;
+        padding: .5rem;
         .list-title{
             font-size: 2.8rem;
-            margin-bottom: 2rem;
+            margin-bottom: 4rem;
         }
     }
 }
