@@ -1,0 +1,53 @@
+@import '_variables';
+@import '_sizing';
+@import '_mixins';
+
+.icons{
+    @include position;
+    @include flex-column;
+
+    a{
+        padding-left: 10px;
+
+        &:nth-child(1){
+            color: $facebook-blue;
+        }
+
+        &:nth-child(2){
+            color: $twitter-blue;
+        }
+
+        &:nth-child(3){
+            color: $google-red;
+        }
+
+        &:nth-child(4){
+            color: $linkedin-blue;
+        }
+
+        &:nth-child(5){
+            color: $youtube-red;
+        }
+
+        i{
+            font-size: 48px;
+            padding-bottom: 5px;
+
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }    
+}
+
+.content{
+    margin: 30px 80px;
+
+    h2{
+        font-size: 32px;
+    }
+
+    p{
+        font-size: 24px;
+    }
+}
