@@ -1,26 +1,102 @@
-.header{
-    width:100%;
-    height: 5vh;
-    padding: 3rem 5rem;
+.header {
+  width: 100%;
+  padding: 1.4rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    &__container{
-        max-width: 140rem;
-        @include flexSpaceAround;
-        text-transform: uppercase;
+  &__logo {
+    width: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    & img {
+      width: 26.3rem;
+      height: 5.9rem;
+      @include respond(res1280) {
+        width: 23.3rem;
+        height: 5rem;
+      }
+      @include respond(res1130) {
+        width: 18.3rem;
+        height: 4.3rem;
+      }
+    }
+  }
+  &__nav {
+    width: 85vw;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+
+    & input {
+      display: none;
     }
 
-    &__nav-box{
-        .nav-list{
-            display: flex;
-            list-style: none;
+    label {
+      padding-right: 0.8rem;
+      position: absolute;
+      justify-content: end;
+      & #menu,
+      #close {
+        color: $bgolor-body;
+        font-size: 2.4rem;
+        cursor: pointer;
+        display: none;
+      }
+    }
 
-            .navigation{
-                margin-right:4rem;
-                text-decoration: none;
-                color: $color-primary-green-dark;
-                font-weight: 500;
-                font-size: 1.4rem;
-            }
+    @include respond(tablet) {
+      .nav-list {
+        &__item {
+          display: none;
         }
+      }
+
+      label {
+        & #menu {
+          display: block;
+        }
+      }
     }
+
+    // @include respond(phone) {
+    // }
+
+    & .nav-list {
+      width: 100%;
+      padding: 2.3rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      column-gap: 4rem;
+      @include respond(res1280) {
+        column-gap: 2rem;
+      }
+      @include respond(res1130) {
+        column-gap: 1.5rem;
+      }
+      &__item {
+        list-style: none;
+        &__link {
+          text-decoration: none;
+          text-transform: uppercase;
+          font-family: "Roboto";
+          font-size: 1.4rem;
+          font-weight: 700;
+          line-height: 1.6rem;
+          letter-spacing: 0.15em;
+          text-align: left;
+          color: $bgolor-body; // variable ksarqes - DONE
+          @include respond(res1280) {
+            font-size: 1.4rem;
+          }
+          @include respond(res1130) {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
 }

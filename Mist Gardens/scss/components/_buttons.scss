@@ -1,25 +1,32 @@
-.btn{
-    padding: 1rem 4rem;
-    text-decoration: none;
-    font-size: 1.6rem;
-    font-weight: 500;
-    text-transform: uppercase;
-}
+.btn {
+  padding: 1rem 4rem;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
 
-.button-primary{
+  @include respond(res1280) {
+    padding: 0.7rem 3rem;
+  }
+  @include respond(res1130) {
+    padding: 0.6rem 2rem;
+  }
+
+  &--primary {
     background-color: $color-primary-green;
-    border: .3rem solid $color-primary-green;
-    color: $color-primary-green; 
-}
+    border: 0.3rem solid $color-primary-green;
+    color: $color-primary-green;
+  }
 
-.button-secondary{
-    border: .3rem solid $color-primary-green;
-    margin-right:4rem;
+  &--secondary {
+    border: 0.3rem solid $color-primary-green;
+    margin-right: 4rem;
     color: $color-primary-green-dark;
 
-    &--white{
-        color:$color-white;
-        border: .3rem solid $color-white;
-        margin-right:4rem;
+    &--white {
+      color: $color-white;
+      border: 0.3rem solid $color-white;
+      margin-right: 4rem;
     }
+  }
 }

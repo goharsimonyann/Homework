@@ -1,247 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/png" href="img/Subtract.png">
-    <link rel="stylesheet" href="./scss/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="img/Subtract.png" />
+    <link rel="stylesheet" href="./scss/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
     <title>Mist Gardens</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- header -->
     <header class="header">
-        <div class="header__container">
-            <div class="header__logo-box">
-                <img src="./img/logo.png" alt="" class="header__logo"
-                    width="240px">
-            </div>
-            <div class="header__nav-box">
-                <ul class="nav-list">
-                    <li>
-                        <a href="#" class="navigation">Home</a>
-                    </li>
-                    <li>
-                        <a href="#" class="navigation">Visit</a>
-                    </li>
-                    <li>
-                        <a href="#" class="navigation">Exhibitions</a>
-                    </li>
-                    <li>
-                        <a href="#" class="navigation">Programs & Events</a>
-                    </li>
-                    <li>
-                        <a href="#" class="navigation">Store</a>
-                    </li>
-                    <li>
-                        <a href="" class="navigation btn button-secondary">Membership</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+      <div class="header__logo">
+        <img src="./img/logo.png" alt="Logo" />
+      </div>
+      <nav class="header__nav nav">
+        <input type="checkbox" id="check" />
+        <label for="check">
+          <i class="fa-solid fa-bars" id="menu"></i>
+          <i class="fa-solid fa-xmark" id="close"></i>
+        </label>
+        <ul class="nav-list">
+          <li class="nav-list__item">
+            <a href="#" class="nav-list__item__link">Home</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#" class="nav-list__item__link">Visit</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#" class="nav-list__item__link">Exhibitions</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#" class="nav-list__item__link">Programs & Events</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#" class="nav-list__item__link">Store</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="" class="btn btn--secondary">Membership</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <!-- first section  -->
-    <section class="first-section">
-        <div class="first-section__container">
-            <div class="first-section__left">
-                <div class="heading-primary">
-                    <h1 class="heading-primary--main">
-                        A beatiful adventure awaits
-                    </h1>
-                    <p class="heading-primary--sub">
-                        Lorem ipsum dolor sit amet, 
-                        consectetur adipiscing elit. Tincidunt facilisis nunc
-                    </p>
-                </div>
+    <main>
+      <section class="first-section">
+        <div class="first-section__left">
+          <div class="heading-primary">
+            <h1 class="heading-primary--main">A beatiful adventure awaits</h1>
+            <p class="heading-primary--sub">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt
+              facilisis nunc
+            </p>
+          </div>
 
-                <div class="buttons">
-                    <a href="#" class="btn button-primary">Buy tickets</a>
-                    <a href="#" class="btn button-secondary">Learn more</a>
-                </div>
-            </div>
-            <div class="first-section__right">
-                <img src="./img/Rectangle 4.png" alt="photo"
-                    width="350px" height="500px" class="rectangle-photo">
-            </div>
+          <div class="buttons">
+            <a href="#" class="btn btn--primary">Buy tickets</a>
+            <a href="#" class="btn btn--secondary">Learn more</a>
+          </div>
         </div>
-    </section>
+
+        <div class="first-section__right">
+          <img
+            src="./img/Rectangle 4.png"
+            alt="photo"
+            class="rectangle-photo"
+          />
+        </div>
+      </section>
+    </main>
+
 
     <!-- second section  -->
-    <section class="second-section">
+    <!-- <section class="second-section">
+      <div class="second-section__container">
+        <div class="second-section__top-box">
+          <div class="top-box--left">
+            <img
+              src="./img/Rectangle 21.png"
+              alt="photo"
+              width="400px"
+              height="250px"
+            />
+          </div>
 
-        <div class="second-section__container">         
-            <div class="second-section__top-box">
+          <div class="top-box--right">
+            <div class="heading-secondary">
+              <h2 class="heading-secondary--main">
+                Discover yourself with nature
+              </h2>
+              <p class="heading-secondary--sub">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Tincidunt facilisis nuncLorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Tincidunt facilisis nunc
+              </p>
 
-                <div class="top-box--left">
-                    <img src="./img/Rectangle 21.png" alt="photo"
-                    width="400px" height="250px">
-                </div>
-
-                <div class="top-box--right">
-                    <div class="heading-secondary">
-                        <h2 class="heading-secondary--main">
-                            Discover yourself with nature
-                        </h2>
-                        <p class="heading-secondary--sub">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Tincidunt facilisis nuncLorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Tincidunt facilisis nunc
-                        </p>
-
-                        <div class="buttons">
-                            <a href="#" class="btn button-secondary--white">Learn more</a>
-                        </div>
-
-                    </div>
-                </div>
+              <div class="buttons">
+                <a href="#" class="btn btn--secondary--white">Learn more</a>
+              </div>
             </div>
-
-            <div class="second-section__bottom-box">
-                <img src="./img/Rectangle 22.png" alt="photo"
-                    width="1000px" height="350px">
-            </div>
+          </div>
         </div>
-       
 
-    </section>
+        <div class="second-section__bottom-box">
+          <img
+            src="./img/Rectangle 22.png"
+            alt="photo"
+            width="1000px"
+            height="350px"
+          />
+        </div>
+      </div>
+    </section> -->
 
     <!-- third section  -->
-    <section class="third-section">
-        <div class="third-section__container">
-            <div class="third-section__top-box">
-                <h2 class="heading-secondary--title">
-                    News & Updates
-                </h2>
-                <div class="third-section--post-box">
-                    <img src="./img/Rectangle 25.png" alt="line"
-                        height="2px">
-                    <div class="post">
-                        View all posts 
-                        <img src="./img/arrow-right.png" alt="arrow"
-                            width="14px">
-                    </div>
-                </div>
+    <!-- <section class="third-section">
+      <div class="third-section__container">
+        <div class="third-section__top-box">
+          <h2 class="heading-secondary--title">News & Updates</h2>
+          <div class="third-section--post-box">
+            <img src="./img/Rectangle 25.png" alt="line" height="2px" />
+            <div class="post">
+              View all posts
+              <img src="./img/arrow-right.png" alt="arrow" width="14px" />
             </div>
-            <div class="third-section__bottom-box">
-
-                <div class="bottom-box__left">
-                    <div class="third-section--top-pic">
-                        <img src="./img/Rectangle 24.png" alt="photo"
-                        width="500px" height="300px">
-                    </div>
-                    <div class="third-section--blog-box">
-                        <h2 class="heading-primary--main">
-                            Plants Around Us 
-                        </h2>
-                        <p class="heading-primary--sub">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Tincidunt facilisis nuncLorem ipsum dolor sit.Lorem ipsum dolor sit amet, 
-                            consectetur adipiscing elit...
-                        </p>
-                        <p class="blog-date">
-                            December 23, 2021
-                        </p>
-                    </div>
-                </div>
-                <div class="bottom-box__right">
-                    <div class="third-section--blog-1">
-                        <img src="./img/Rectangle 26.png" alt="blog-pic-1" class="blog-pic-1"
-                            width="250px" height="150px">
-                        <div class="first">
-                            <h2 class="heading-primary--main">Lush Gardens</h2>
-                            <p class="heading-primary--sub">
-                                Lorem ipsum dolor sit amet, consectetur donec adipiscing elit. 
-                                Tincidunt facilisis nunc lorem 
-                            </p>
-                            <p class="blog-date">
-                                December 16, 2021
-                            </p>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="third-section--blog-2">
-                        <img src="./img/Rectangle 27.png" alt="blog-pic-2" class="blog-pic-2"
-                        width="250px" height="150px">
-                    <div class="second">
-                        <h2 class="heading-primary--main">It Starts with Soil</h2>
-                        <p class="heading-primary--sub">
-                            Lorem ipsum dolor sit amet, consectetur donec adipiscing elit. 
-                            Tincidunt facilisis nunc lorem 
-                        </p>
-                        <p class="blog-date">
-                            November 11, 2021
-                        </p>
-                    </div>
-                    </div>
-                    <hr>
-                    <div class="third-section--blog-3">
-                        <img src="./img/Rectangle 28.png" alt="blog-pic-2" class="blog-pic-2"
-                        width="250px" height="150px">
-                    <div class="third">
-                        <h2 class="heading-primary--main">Exotic Nature</h2>
-                        <p class="heading-primary--sub">
-                            Lorem ipsum dolor sit amet, consectetur donec adipiscing elit. 
-                            Tincidunt facilisis nunc lorem 
-                        </p>
-                        <p class="blog-date">
-                            November 11, 2021
-                        </p>
-                    </div>
-                    </div>
-                </div>
-            </div>
-
+          </div>
         </div>
-    </section>
+        <div class="third-section__bottom-box">
+          <div class="bottom-box__left">
+            <div class="third-section--top-pic">
+              <img
+                src="./img/Rectangle 24.png"
+                alt="photo"
+                width="500px"
+                height="300px"
+              />
+            </div>
+            <div class="third-section--blog-box">
+              <h2 class="heading-primary--main">Plants Around Us</h2>
+              <p class="heading-primary--sub">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Tincidunt facilisis nuncLorem ipsum dolor sit.Lorem ipsum dolor
+                sit amet, consectetur adipiscing elit...
+              </p>
+              <p class="blog-date">December 23, 2021</p>
+            </div>
+          </div>
+          <div class="bottom-box__right">
+            <div class="third-section--blog-1">
+              <img
+                src="./img/Rectangle 26.png"
+                alt="blog-pic-1"
+                class="blog-pic-1"
+                width="250px"
+                height="150px"
+              />
+              <div class="first">
+                <h2 class="heading-primary--main">Lush Gardens</h2>
+                <p class="heading-primary--sub">
+                  Lorem ipsum dolor sit amet, consectetur donec adipiscing elit.
+                  Tincidunt facilisis nunc lorem
+                </p>
+                <p class="blog-date">December 16, 2021</p>
+              </div>
+            </div>
+            <hr />
+            <div class="third-section--blog-2">
+              <img
+                src="./img/Rectangle 27.png"
+                alt="blog-pic-2"
+                class="blog-pic-2"
+                width="250px"
+                height="150px"
+              />
+              <div class="second">
+                <h2 class="heading-primary--main">It Starts with Soil</h2>
+                <p class="heading-primary--sub">
+                  Lorem ipsum dolor sit amet, consectetur donec adipiscing elit.
+                  Tincidunt facilisis nunc lorem
+                </p>
+                <p class="blog-date">November 11, 2021</p>
+              </div>
+            </div>
+            <hr />
+            <div class="third-section--blog-3">
+              <img
+                src="./img/Rectangle 28.png"
+                alt="blog-pic-2"
+                class="blog-pic-2"
+                width="250px"
+                height="150px"
+              />
+              <div class="third">
+                <h2 class="heading-primary--main">Exotic Nature</h2>
+                <p class="heading-primary--sub">
+                  Lorem ipsum dolor sit amet, consectetur donec adipiscing elit.
+                  Tincidunt facilisis nunc lorem
+                </p>
+                <p class="blog-date">November 11, 2021</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
 
     <!-- footer  -->
-    <footer class="footer">
-        <div class="footer__container">
-            <div class="footer__top-box">
-                <div class="footer--left">
-                    <img src="./img/logo-light.png" alt="logo-light">
-                    <p class="heading-secondary--sub">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt facilisis nuncLorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                </div>
-                <div class="footer--center">
-                    <h2 class="heading-secondary--main">Sitemap</h2>
-                    <ul class="sitemap-list">
-                        <li>
-                            <a href="#" class="navigation">Home</a>
-                        </li>
-                        <li>
-                            <a href="#" class="navigation">Visit</a>
-                        </li>
-                        <li>
-                            <a href="#" class="navigation">Exhibitions</a>
-                        </li>
-                        <li>
-                            <a href="#" class="navigation">Programs & Events</a>
-                        </li>
-                        <li>
-                            <a href="#" class="navigation">Store</a>
-                        </li>
-                        <li>
-                            <a href="" class="navigation">Membership</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer--right">
-                    <h2 class="heading-secondary--main">Conenct</h2>
-                    <div class="footer--icons">
-                        <img src="./img/twitter.png" alt="twitter-icon">
-                        <img src="./img/facebook.png" alt="facebook-icon">
-                        <img src="./img/linkedin.png" alt="linkedin-icon">
-                        <img src="./img/mail.png" alt="mail-icon">
-                    </div>
-                </div>
+    <!-- <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__top-box">
+          <div class="footer--left">
+            <img src="./img/logo-light.png" alt="logo-light" />
+            <p class="heading-secondary--sub">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt
+              facilisis nuncLorem ipsum dolor sit amet, consectetur adipiscing
+              elit.
+            </p>
+          </div>
+          <div class="footer--center">
+            <h2 class="heading-secondary--main">Sitemap</h2>
+            <ul class="sitemap-list">
+              <li>
+                <a href="#" class="nav__list__item--link">Home</a>
+              </li>
+              <li>
+                <a href="#" class="nav__list__item--link">Visit</a>
+              </li>
+              <li>
+                <a href="#" class="nav__list__item--link">Exhibitions</a>
+              </li>
+              <li>
+                <a href="#" class="nav__list__item--link">Programs & Events</a>
+              </li>
+              <li>
+                <a href="#" class="nav__list__item--link">Store</a>
+              </li>
+              <li>
+                <a href="" class="nav__list__item--link">Membership</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer--right">
+            <h2 class="heading-secondary--main">Conenct</h2>
+            <div class="footer--icons">
+              <img src="./img/twitter.png" alt="twitter-icon" />
+              <img src="./img/facebook.png" alt="facebook-icon" />
+              <img src="./img/linkedin.png" alt="linkedin-icon" />
+              <img src="./img/mail.png" alt="mail-icon" />
             </div>
-            
-            <div class="footer__bottom-box">
-                <p class="heading-secondary--sub">© 2021 Mist Gardens. All rights reserved.</p>
-            </div>
+          </div>
         </div>
-    </footer>
-</body>
+
+        <div class="footer__bottom-box">
+          <p class="heading-secondary--sub">
+            © 2021 Mist Gardens. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer> -->
+  </body>
 </html>
