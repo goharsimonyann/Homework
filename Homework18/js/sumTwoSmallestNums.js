@@ -2,7 +2,7 @@
 
 // Create a function that takes an array of numbers and returns the sum of the two lowest positive numbers.
 
-//  INCLUDES POSITIVE NUMBERS => WRONG OUTPUT
+//  INCLUDES NEGATIVE NUMBERS => WRONG OUTPUT
 
 function sumTwoSmallestNums(arr) {
   let sum = 0;
