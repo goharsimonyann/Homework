@@ -2,11 +2,19 @@
 
 // Create a function that takes an array of numbers and returns the sum of the two lowest positive numbers.
 
-//  INCLUDES NEGATIVE NUMBERS => WRONG OUTPUT
+//  SOLVED
+
+function compare(a, b) {
+  if (a < 0 || b < 0) {
+    return;
+  } else {
+    return a - b;
+  }
+}
 
 function sumTwoSmallestNums(arr) {
   let sum = 0;
-  arr.sort((a, b) => a - b);
+  if (arr) arr.sort(compare);
   sum = arr[0] + arr[1];
   return sum;
 }
