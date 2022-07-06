@@ -12,7 +12,7 @@ function pizzaPoints(customer, order, price) {
     } else if (customerTwo.length >= order) {
       return item2;
     } else {
-      return [];
+      return "[]";
     }
   });
 
