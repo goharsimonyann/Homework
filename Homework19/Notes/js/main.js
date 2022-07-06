@@ -1,17 +1,20 @@
-// //  Get Students with Names and Top Notes.
+//  Get Students with Names and Top Notes.
 
-// const students = [
-//   { name: "John", notes: [3, 5, 4] },
-//   { name: "Max", notes: [1, 4, 6] },
-//   { name: "Zygmund", notes: [1, 2, 3] },
-// ];
+const students = [
+  { name: "John", notes: [3, 5, 4] },
+  { name: "Max", notes: [1, 4, 6] },
+  { name: "Zygmund", notes: [1, 2, 3] },
+];
 
-// const getTopNotes = students.map((elem) => {
-//   elem.notes.sort((a, b) => b - a);
-//   return {
-//     name: elem.name,
-//     topNotes: elem.notes[0],
-//   };
-// });
+function getStudentsWithNamesAndTopNotes(obj) {
+  let topNotes = obj.map((elem) => {
+    elem.notes.sort((a, b) => b - a);
+    return {
+      name: elem.name,
+      topNotes: elem.notes[0],
+    };
+  });
+  console.log(topNotes);
+}
 
-// console.log(getTopNotes);
+getStudentsWithNamesAndTopNotes(students);
