@@ -13,4 +13,4 @@ function makeBox(n) {
   }
 }
 
-makeBox(3);
+console.log(makeBox(3));
