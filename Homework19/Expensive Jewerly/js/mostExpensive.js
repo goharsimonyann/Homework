@@ -3,6 +3,26 @@
 // Create a function that gets the name of the piece of jewelry with the highest price and
 // returns "The most expensive one is the {name of jewelry piece}"
 
+// function mostExpensive(obj) {
+//   let expensive = Object.keys(obj).reduce((a, b) => (obj[a] > obj[b] ? a : b));
+//   return `The most expensive one is the ${expensive}`;
+// }
+
+// const testOne = {
+//   "Diamond Earrings": 980,
+//   "Gold Watch": 250,
+//   "Pearl Necklace": 4650,
+// };
+// const testTwo = {
+//   "Silver Bracelet": 280,
+//   "Gemstone Earrings": 180,
+//   "Diamond Ring": 3500,
+// };
+
+// console.log(mostExpensive(testOne));
+// console.log(mostExpensive(testTwo));
+
+debugger;
 function mostExpensive(obj) {
   let expensive = Object.keys(obj).reduce((a, b) => (obj[a] > obj[b] ? a : b));
   return `The most expensive one is the ${expensive}`;
