@@ -3,8 +3,10 @@
 //  Create a function that takes two dates and returns the number of days between
 //  the first and second date.
 function getDays(dayOne, dayTwo) {
+  //  CONVERTS TWO DATES TO UNIX TIME
   let argOne = dayOne.getTime();
   let argTwo = dayTwo.getTime();
+  //  COUNTS THE DIFFERENCE THEN CONVERTS TO DAYS
   let daysBetween = (argTwo - argOne) / (1000 * 60 * 60 * 24);
   return `There is ${daysBetween} days between given dates`;
 }
