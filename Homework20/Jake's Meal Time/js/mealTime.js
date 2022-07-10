@@ -7,6 +7,10 @@
 // of time before Jake's next meal. Represent this as an array with the first and second elements representing hours and 
 // minutes, respectively.
 
+function hoursToMinutes(hour, min){
+    return hour * 60 + min;
+}
+
 function timeToEat(str) {
   let time = str.split(" ");
   let hours = Number(time[0].split(":")[0]);
@@ -29,10 +33,6 @@ function timeToEat(str) {
   FINAL.push(Math.floor(timeLeft / 60));
   FINAL.push(Math.floor(timeLeft % 60));
   return FINAL;
-}
-
-function hoursToMinutes(hour, min){
-    return hour * 60 + min;
 }
 
 console.log(timeToEat("2:00 p.m."));
