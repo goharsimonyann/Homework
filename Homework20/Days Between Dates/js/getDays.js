@@ -1,7 +1,7 @@
 //  How Many Days Between Two Dates
 
- //  Create a function that takes two dates and returns the number of days between 
- //  the first and second date.
+//  Create a function that takes two dates and returns the number of days between
+//  the first and second date.
 function getDays(dayOne, dayTwo) {
   let argOne = dayOne.getTime();
   let argTwo = dayTwo.getTime();
