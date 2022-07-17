@@ -5,13 +5,13 @@ let customersObj = {
   "Spider-Man": [5, 17, 30, 33, 40, 22, 26, 10, 11, 45],
 };
 
-function foo(obj, order, price) {
+function pizzaPoints(obj, order, price) {
   return Object.keys(obj).filter(
     (i) => obj[i].filter((cost) => cost >= price).length > order
   );
 }
 
-console.log(foo(customersObj, 5, 20));
+console.log(pizzaPoints(customersObj, 5, 20));
 
 
 //  function pizzaPoints(customer, order, price) {
