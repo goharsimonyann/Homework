@@ -32,19 +32,6 @@ console.log(foo(customersObj, 5, 20));
   
   //   return freePizza;
   // }
-// function pizzaPoints(obj, order, price) {
-//   let freePizza = Object.entries(obj).map((item) => {
-//     let filteredOrder = obj[item].filter((elem) => elem >= price);
-//     for (let i = 0; i < filteredOrder.length; i++) {
-//       if (filteredOrder[i].length >= order) {
-//         return item;
-//       }
-//     }
-//   });
-//   return freePizza;
-// }
-
-// console.log(pizzaPoints(customersObj, 5, 20));
 
 // // let customersObj = {
 // //   "Batman": [22, 30, 11, 17, 15, 52, 27, 12],
