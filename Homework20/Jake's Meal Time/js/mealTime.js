@@ -38,3 +38,5 @@ function timeToEat(str) {
 timeToEat("2:00 p.m.");
 timeToEat("5:50 p.m.");
 timeToEat("12:00 a.m.");
+timeToEat("1:00 a.m.");
+
