@@ -17,7 +17,7 @@ function isHappy(num) {
     num = Math.floor(num / 10);
   }
 
-  return sum === 1 ? true : sum > 1 && sum <= 4 ? false : isHappy(sum);
+  return (sum === 1) ? true : (sum > 1 && sum <= 4) ? false : isHappy(sum);
 }
 
 console.log(isHappy(139)); //true
