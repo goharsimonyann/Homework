@@ -11,17 +11,13 @@ happy number or not. Return `true` if so, `false` otherwise.
 
 function isHappy(num) {
   let sum = 0;
+
   while (num) {
     sum += Math.pow(num % 10, 2);
     num = Math.floor(num / 10);
   }
-  if (sum === 1) {
-    return true;
-  } else if (sum > 1 && sum <= 4) {
-    return false;
-  }
 
-  return isHappy(sum);
+  return (sum === 1) ? true : (sum > 1 && sum <= 4) ? false : isHappy(sum);
 }
 
 console.log(isHappy(139)); //true
